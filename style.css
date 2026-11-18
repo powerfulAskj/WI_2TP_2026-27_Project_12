@@ -1,0 +1,160 @@
+/* ==========================================================================
+   ZADANIE: Podstawy CSS i Efekty Wizualne
+   Wypełnij poniższe reguły CSS zgodnie z poleceniami w komentarzach.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. USTAWIENIA OGÓLNE I PODSTAWOWE STYLOWANIE (body, container)
+   -------------------------------------------------------------------------- */
+
+body {
+  /* TODO: Ustaw tło strony na jasnoszary kolor (#f0f2f5) */
+  background-color: #f0f2f5;
+  /* TODO: Ustaw czcionkę dla całej strony na sans-serif*/
+  font-family: sans-serif;
+  /* TODO: Wyzeruj domyślny margines i padding*/
+  margin: 15px;
+  padding: 15px;
+}
+
+.container {
+  /* TODO: Ustaw maksymalną szerokość pojemnika na 700px */
+  width: 700px;
+  /* TODO: Wyśrodkuj pojemnik na stronie - margines 40px*/
+  margin: 40px auto;
+  /* TODO: Dodaj padding 20px */
+  padding: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   2. ODSTĘPY MIĘDZY LITERAMI (letter-spacing) ORAZ CIEŃ TEKSTU (text-shadow)
+   -------------------------------------------------------------------------- */
+
+.tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  /* TODO: Dodaj odstęp między literami o wartości 2px*/
+  letter-spacing: 2px;
+  /* TODO: Dodaj padding góra-dół 4px prawo-lewo 12px*/
+  padding: 4px 12px 4px 12px;
+  /* TODO: Dodaj kolor czcionki biały*/
+  color: #fff;
+  /* TODO: Dodaj kolor tła #0066cc*/
+  background-color: #0066cc;
+  /* TODO: Dodaj zaokrąglenie rogów 4px*/
+  border-radius: 4px;
+}
+
+.main-title {
+  color: #1a252c;
+  font-size: 2.5rem;
+  margin: 10px 0;
+
+  /* TODO: Dodaj odstęp między literami o wartości 4px */
+  word-spacing: 4px;
+  /* TODO: Dodaj cień tekstu:
+       - przesunięcie w prawo (X): 2px
+       - przesunięcie w dół (Y): 2px
+       - rozmycie (blur): 4px
+       - kolor cienia: rgba(0, 0, 0, 0.2)
+    */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  color: #555555;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+
+  /* TODO: Dodaj odstęp między literami 1px */
+  word-spacing: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   3. CIEŃ ZA ELEMENTEM (box-shadow) ORAZ PODSTAWY KARTY (.card)
+   -------------------------------------------------------------------------- */
+
+.card {
+  /* TODO: Dodaj zaokrąglenie rogów 12px*/
+  border-radius: 12px;
+  /* TODO: Dodaj kolor tła #ffffff*/
+  background-color: #ffffff;
+  /* TODO: Dodaj padding 30px*/
+  padding: 30px;
+
+  /* TODO: Dodaj cień za całą kartą (box-shadow):
+       - przesunięcie X: 0
+       - przesunięcie Y: 8px
+       - rozmycie (blur): 20px
+       - kolor cienia: rgba(0, 0, 0, 0.1)
+    */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #0066cc;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   4. PRZEZROCZYSTOŚĆ ELEMENTU (opacity oraz rgba)
+   -------------------------------------------------------------------------- */
+
+.info-box {
+  background-color: #e6f2ff;
+  border-left: 4px solid #0066cc;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+
+  /* TODO: Ustaw przezroczystość całego elementu .info-box na 85% */
+  opacity: 0.85;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #004080;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  /* TODO: Dodaj cień pod przyciskiem (box-shadow):
+       - przesunięcie X: 0
+       - przesunięcie Y: 8px
+       - rozmycie (blur): 20px
+       - kolor cienia: rgba(0, 0, 0, 0.1)
+    */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  /* TODO: Zmień przezroczystość przycisku po najechaniu myszką na 90%*/
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #888888;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  /* TODO: Ustaw przezroczystość stopki na 70% */
+}
